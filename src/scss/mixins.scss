@@ -1,0 +1,14 @@
+@mixin positioning($position: relative, $top: 0, $right: 0, $bottom: 0, $left: 0) {
+   position: $position;
+
+   top: $top;
+   bottom: $bottom;
+
+   right: $right;
+   left: $left;
+}
+
+@mixin sizing($width: 100vw, $height: 100vh) {
+   width: $width;
+   height: $height;
+}

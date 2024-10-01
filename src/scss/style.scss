@@ -1,0 +1,64 @@
+@use "./imports.scss" as *;
+
+body {
+   background: $base-09;
+   color: $blue-03;
+}
+
+.root {
+   @include positioning(fixed);
+   @include sizing;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   gap: 0px;
+
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 29px;
+
+   user-select: none;
+
+   .error {
+      display: contents;
+
+      .header {
+         color: $red-03;
+         font-weight: 700;
+         font-size: 96px;
+         line-height: 120px;
+      }
+
+      .message {
+         color: $red-01;
+      }
+   }
+
+   .logo {
+      $height: 48px;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 16px;
+
+      font-weight: 900;
+      font-size: $height;
+      line-height: 115px;
+      letter-spacing: -0.05em;
+
+      .img {
+         $width: calc((($height / 8) + 2px) * 8);
+         width: $width;
+         height: $width;
+      }
+
+      .dot {
+         color: $yellow-03;
+      }
+   }
+}

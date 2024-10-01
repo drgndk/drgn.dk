@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /
+
+<FilesMatch "\.(jpg|png|css|js|html|php|json)$">
+   Header set Cache-Control "private, proxy-revalidate, max-age=0"
+</FilesMatch>
+
+Options All -Indexes
+
+RewriteRule ^.* .route.php [L]
+
+Header always append X-Frame-Options SAMEORIGIN

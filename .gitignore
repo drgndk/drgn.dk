@@ -1,0 +1,12 @@
+# hidden files
+.*
+!.htaccess
+!.route.php
+!.gitignore
+
+# modules
+/app/modules/*
+!/app/modules/init.php
+
+# storage
+/storage/*

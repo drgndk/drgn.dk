@@ -1,0 +1,14 @@
+{
+   "name": "@drgndk/drgn.dk",
+   "description": "Source code of my personal website",
+   "private": true,
+   "scripts": {
+      "build": "sass ./src/scss/style.scss ./resources/css/style.css --style compressed",
+      "watch": "sass --watch ./src/scss/style.scss ./resources/css/style.css --style compressed",
+      "start": "sudo apachectl start",
+      "stop": "sudo apachectl stop",
+      "restart": "sudo apachectl restart",
+      "commit": "git add . && git commit -m 'bun run commit'",
+      "push": "git push --set-upstream origin main"
+   }
+}
