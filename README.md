@@ -12,6 +12,7 @@ With enough creativity, you can probably figure out how everything missing is su
 
 ### Core Functions **(Priority)**
    - [ ] Proper README.md
+   - [ ] Documentation
    - [ ] Modules
       - [ ] (better) Routing System
       - [ ] Cache System
@@ -30,8 +31,8 @@ With enough creativity, you can probably figure out how everything missing is su
 
 ### Optimization
    - [ ] Minify Resources
-   - [ ] Optimize Images
-   - [ ] Cache
+   - [ ] Image Optimization
+   - [ ] Caching
 
 ### Security
-   - [x] (better?) Rate limiting
+   - [ ] (better?) Rate limiting (Currently each request removes 1 from the limit, Only 1 route request should remove 1 not all)

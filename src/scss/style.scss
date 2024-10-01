@@ -61,4 +61,26 @@ body {
          color: $yellow-03;
       }
    }
+
+   .github-button {
+      @include positioning(fixed, 16px, 16px, unset, unset);
+      padding: 8px 16px;
+
+      font-size: 16px;
+      line-height: 18px;
+
+      outline: none;
+      border: none;
+      border-radius: 10px;
+
+      background: $base-07;
+
+      color: $base-04;
+      cursor: pointer;
+
+      &:hover {
+         background: $base-06;
+         color: $base-02;
+      }
+   }
 }

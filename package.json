@@ -8,7 +8,9 @@
       "start": "sudo apachectl start",
       "stop": "sudo apachectl stop",
       "restart": "sudo apachectl restart",
-      "commit": "git add . && git commit -m 'bun run commit'",
-      "push": "git push --set-upstream origin main"
+      "pull": "git pull",
+      "commit": "./.commit.sh",
+      "push": "git push --set-upstream origin main",
+      "test": "echo \"$SHELL\""
    }
 }
