@@ -11,9 +11,9 @@
       <br />
       <a href="https://drgn.dk/">Visit Website</a>
       ·
-      <a href="issues/new?assignees=&labels=bug&projects=&template=bug-report---.md">Report a Bug</a>
+      <a href="https://github.com/drgndk/drgn.dk/issues/new?assignees=&labels=bug&projects=&template=bug-report---.md">Report a Bug</a>
       ·
-      <a href="issues/new?assignees=&labels=bug&projects=&template=feature-request---.md">Request a Feature</a>
+      <a href="https://github.com/drgndk/drgn.dk/issues/new?assignees=&labels=bug&projects=&template=feature-request---.md">Request a Feature</a>
    </p>
 </div>
 
