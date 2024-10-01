@@ -41,16 +41,11 @@ require_mod("path");
 $requested_path = new Path(htmlentities(substr($_SERVER["REQUEST_URI"] ?? "", 1)) ?: "home");
 
 // Create Public Path from Requested by prefixing the "public" directory.
-$public_path = Path::from("public/$requested_path");
-
-// MIND: `Path` sollte `Path->default_extension(string): Path` besitzen, um die File extension zu setzen, wenn keine oder die falsche vorhanden ist.
-if (empty($public_path->extension())) {
-   $public_path = Path::from("$public_path.php");
-}
+$public_path = Path::from("public/$requested_path")->default_extension("php");
 
 // If Public Path does not exist, fallback to Requested Path, if its a resource, otherwise show 404.
 if (!$public_path->is_file()) {
-   if ($requested_path->dirname()->starts_with("resources")) {
+   if ($requested_path->dirname()->starts_with("resources") && $requested_path->is_file()) {
       redirect($requested_path, $requested_path->extension() ?? "html");
    }
 
