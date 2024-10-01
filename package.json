@@ -10,7 +10,6 @@
       "restart": "sudo apachectl restart",
       "pull": "git pull",
       "commit": "./.commit.sh",
-      "push": "git push --set-upstream origin main",
-      "test": "echo \"$SHELL\""
+      "push": "git push --set-upstream origin main"
    }
 }

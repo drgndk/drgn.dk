@@ -35,4 +35,4 @@ With enough creativity, you can probably figure out how everything missing is su
    - [ ] Caching
 
 ### Security
-   - [ ] (better?) Rate limiting (Currently each request removes 1 from the limit, Only 1 route request should remove 1 not all)
+   - [ ] (better?) Rate limiting (doesn't work correctly atm)
