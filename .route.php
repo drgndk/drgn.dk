@@ -53,10 +53,9 @@ if (!$public_path->is_file()) {
    error_page("404");
 }
 
-// MIND: `->extension(string $fallback): string` extension sollte ein fallback, als Argument, haben.
 $return_type = $public_path->extension("html");
 
-// MIND: Routing System
+// TODO: Routing System
 // Routing System sollte automatisch Doctype und Metadaten setzen, wenn der Content-Type "text/html" ist.
 if (($types[$return_type] ?? false) === "text/html") {
    $metadata = [["charset" => "UTF-8"], ["name" => "viewport", "content" => "width=device-width, initial-scale=1.0"], ["name" => "description", "content" => "Fun Site maintained by @drgndk"], ["name" => "author", "content" => "drgndk"], ["name" => "theme-color", "content" => "#0F0F0F"], ["name" => "robots", "content" => "index, follow"], ["name" => "keywords", "content" => "drgndk, dragonduck"], ["name" => "twitter:title", "property" => "og:title", "content" => "drgndk - web developer & designer"], ["name" => "twitter:description", "property" => "og:description", "content" => "Fun Site maintained by @drgndk"], ["property" => "og:type", "content" => "website"], ["property" => "og:url", "content" => "https://drgn.dk"], ["name" => "twitter:image", "property" => "og:image", "content" => "/assets/og-image.png"]];
