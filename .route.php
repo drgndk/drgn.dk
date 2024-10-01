@@ -46,7 +46,7 @@ $public_path = Path::from("public/$requested_path")->default_extension("php");
 // If Public Path does not exist, fallback to Requested Path, if its a resource, otherwise show 404.
 if (!$public_path->is_file()) {
    if ($requested_path->dirname()->starts_with("resources") && $requested_path->is_file()) {
-      redirect($requested_path, $requested_path->extension() ?? "html");
+      redirect($requested_path, $requested_path->extension("html"));
    }
 
    // TODO: Routing System
@@ -54,7 +54,7 @@ if (!$public_path->is_file()) {
 }
 
 // MIND: `->extension(string $fallback): string` extension sollte ein fallback, als Argument, haben.
-$return_type = $public_path->extension() ?? "html";
+$return_type = $public_path->extension("html");
 
 // MIND: Routing System
 // Routing System sollte automatisch Doctype und Metadaten setzen, wenn der Content-Type "text/html" ist.
