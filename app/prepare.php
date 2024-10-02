@@ -1,16 +1,16 @@
 <?php
 
-// WIP - Error Reporting
-ini_set("display_errors", "On");
-ini_set("display_startup_errors", "On");
-error_reporting(E_ALL);
-
 // ================================================================
 //
 //             This file prepares required constants and
 //               functions so everything runs smoothly
 //
 // ================================================================
+
+// WIP - Error Reporting
+ini_set("display_errors", "On");
+ini_set("display_startup_errors", "On");
+error_reporting(E_ALL);
 
 if (session_status() === PHP_SESSION_NONE) {
    session_start();
@@ -31,7 +31,7 @@ if (!set_time_limit(30)) {
 
 // For now only allow GET requests
 if ($_SERVER["REQUEST_METHOD"] !== "GET") {
-   error("405");
+   error_page("405");
 }
 
 if (time() < 1614556800) {

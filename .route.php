@@ -6,9 +6,7 @@ require_once "app/prepare.php";
 // MIND: `public Bucket::grant_access(): void` -> `private Bucket::update_bucket(): bool`
 // Abfrage als eigene Method in `Bucket` erstellen.
 require_mod("bucket");
-if (!Bucket::update_bucket()) {
-   new RateLimitExceededException();
-}
+Bucket::grant_access();
 
 // TODO: File System
 $types = [

@@ -4,6 +4,7 @@ require_once "exceptions/index.php";
 /**
  * @param string $module - Das Module was importiert werden soll.
  * @throws ModuleNotFoundException
+ * @since 1.0.0
  */
 function require_mod(string $module): void
 {

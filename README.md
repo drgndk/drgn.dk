@@ -1,3 +1,5 @@
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v2/monitor/r8ph.svg)](https://status.drgn.dk/?utm_source=status_badge)
+
 <div align="center" id="readme-top">
    <a href="resources/img/logo.svg">
       <img src="resources/img/logo.svg" alt="Logo" width="80" height="80">
@@ -47,7 +49,7 @@
 
 **[drgn.dk](https://drgn.dk)** is a simple, yet powerful website.
 
-The Website should act as an hub for future projects, as well as a place to showcase my work.
+This Website should act as an hub for future projects, as well as a place to showcase my work.
 
 Some files are not included in this repository, because they might contain sensitive information. <br>
 This includes all my `app/modules`, as long they are in WIP state. <br>

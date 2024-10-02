@@ -9,5 +9,8 @@
 /app/modules/*
 !/app/modules/init.php
 
+# Module whitelist
+!/app/modules/dotenv
+
 # storage
 /storage/*
