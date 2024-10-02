@@ -10,6 +10,7 @@
 // WIP - Error Reporting
 ini_set("display_errors", "On");
 ini_set("display_startup_errors", "On");
+ini_set("session.cookie_httponly", 1);
 error_reporting(E_ALL);
 
 if (session_status() === PHP_SESSION_NONE) {

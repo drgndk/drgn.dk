@@ -1,4 +1,8 @@
 [![Better Stack Badge](https://uptime.betterstack.com/status-badges/v2/monitor/r8ph.svg)](https://status.drgn.dk/?utm_source=status_badge)
+![Commnit Activity](https://img.shields.io/github/commit-activity/t/drgndk/drgn.dk)
+![Un...License](https://img.shields.io/github/license/drgndk/drgn.dk)
+
+---
 
 <div align="center" id="readme-top">
    <a href="resources/img/logo.svg">
