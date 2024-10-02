@@ -1,6 +1,7 @@
 [![Better Stack Badge](https://uptime.betterstack.com/status-badges/v2/monitor/r8ph.svg)](https://status.drgn.dk/?utm_source=status_badge)
 ![Commnit Activity](https://img.shields.io/github/commit-activity/t/drgndk/drgn.dk)
 ![Un...License](https://img.shields.io/github/license/drgndk/drgn.dk)
+![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade-score/drgn.dk)
 
 ---
 
@@ -33,7 +34,7 @@
          </ul>
       </li>
       <li>
-         <a href="#roadmap">Roadmap</a>
+         <a href="#to-do">To-Do</a>
          <ul>
             <li><a href="#core-functions-priority">Core Functions</a></li>
             <li><a href="#frontend">Frontend</a></li>
@@ -64,7 +65,7 @@ With enough creativity, you can probably figure out how everything missing is su
 - [PHP 8.3.11](https://php.net)
 - [SASS 1.77.8](https://sass-lang.com)
 
-## Roadmap
+## To-Do
 
 Future plans and goals for the project:
 
@@ -93,7 +94,8 @@ Future plans and goals for the project:
    - [ ] Caching
 
 ### Security
-   - [ ] (better?) Rate limiting (doesn't work correctly atm)
+   - [x] (better?) Rate limiting
+   - [x] Secruity Headers
 
 ## Contributing
 

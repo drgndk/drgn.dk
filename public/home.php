@@ -8,5 +8,6 @@
    </div>
    <small>Work in Progress</small>
 
-   <button onclick="window.open('https://github.com/drgndk/drgn.dk');" class="github-button">View on Github</button>
+   <button class="github-button">View on Github</button>
+   <script src="/resources/js/open_github.js"></script>
 </div>
